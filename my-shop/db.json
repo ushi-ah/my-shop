@@ -1,0 +1,52 @@
+{
+  "products": [
+    {
+      "id": 7707,
+      "description": " Full frame",
+      "price": 48,
+      "image": "https://www.optica109.com/wp-content/uploads/2022/10/31.png",
+      "style": "modern",
+      "color": "red"
+    },
+    {
+      "id": 7707,
+      "description": " Full frame",
+      "price": 48,
+      "image": "https://www.rudyproject.co.il/wp-content/uploads/2019/06/SP640B47-0000-STEP-02-Blue-1.jpg",
+      "style": "modern",
+      "color": "blue"
+    },
+    {
+      "id": 7708,
+      "description": " Full frame",
+      "price": 48,
+      "image": "https://sette.co.il/cdn/shop/collections/reading-d_15b7e89b-32a9-44b0-88fd-be0dddd2af1c_grande.png?v=1500559513",
+      "style": "modern",
+      "color": "black"
+    },
+    {
+      "id": 7707,
+      "description": " Full frame",
+      "price": 48,
+      "image": "https://www.rudyproject.co.il/wp-content/uploads/2019/06/SP640B47-0000-STEP-02-Blue-1.jpg",
+      "style": "modern",
+      "color": "blue"
+    },
+    {
+      "id": 7707,
+      "description": " Full frame",
+      "price": 48,
+      "image": "https://www.rudyproject.co.il/wp-content/uploads/2019/06/SP640B47-0000-STEP-02-Blue-1.jpg",
+      "style": "modern",
+      "color": "blue"
+    },
+    {
+      "id": 7706,
+      "description": " Full frame",
+      "price": 48,
+      "image": "https://optica-halperin.com/wp-content/uploads/elementor/thumbs/0212635-scaled-q96ajmpwiicbq6j4xqr8jlc98yfvj0ssls7scw2boo.jpg",
+      "style": "modern",
+      "color": "gold"
+    }
+  ]
+}

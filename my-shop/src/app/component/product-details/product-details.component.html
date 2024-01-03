@@ -1,0 +1,16 @@
+<div class="p-2 lg:w-full lg:max-w-md lg:flex-shrink-0 mx-auto">
+    <mat-card class="text-center mx-auto flex ">
+        <div class="mb-15 p-2 mx-auto d-flex align-items-center justify-content-center" style="height: 60vh;">
+            <img [src]="productCard?.image" alt="" class=" mx-auto">
+            <h3 class="mt-4 text-sm text-gray-700 font-bold">{{productCard?.description}}</h3>
+            <h3 class="mt-4 text-sm text-gray-700 font-bold">Color: {{productCard?.color}}</h3>
+            <h3 class="mt-4 text-sm text-gray-700 font-bold">Style: {{productCard?.style}}</h3>
+            <p class="mt-8 text-lg font-medium text-blue-900">Price: {{productCard?.price | currency:'USD':'symbol'}}
+            </p>
+            <button mat-fab extended color="primary" class="mt-10" routerLink="/cart" (click)="AddToCart()">
+                <mat-icon>shopping_cart</mat-icon>
+                Add to cart
+            </button>
+        </div>
+    </mat-card>
+</div>

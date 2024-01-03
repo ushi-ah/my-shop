@@ -1,0 +1,34 @@
+<mat-toolbar class="max-w-8xl mx-auto  border-x justify-between">
+    <a [routerLink]="['/']" class="text-4xl font-bold tracking-tight text-black sm:text-5xl">My optics</a>
+    <button mat-icon-button [matMenuTriggerFor]="menu">
+        <mat-icon [matBadge]="itemsQuantity" [matBadgeHidden]="!itemsQuantity"
+            matBadgeColor="warn">shopping_cart</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+        <!-- p-3= Upper and lower padding, divider-y=separates the lines, divider-solid=Solid separation-->
+        <div class="p-3 divide-y divide-solid">
+            <div class="pd-3 flex justify-between">
+                <!-- mr-16= margin right -->
+                <span class="mr-16">{{ itemsQuantity }} Items</span>
+                <a routerLink="cart">View Cart</a>
+            </div>
+            <div *ngIf="cart.items.length" class="py-3">
+                <div *ngFor="let item of cart.items" class="flex justify-between font-light mb-2 ">
+                    {{item.description}} x {{item.quantity}}
+                    <span class="font-bold">{{ item.price | currency:'USD':'symbol'}}</span>
+                </div>
+            </div>
+            <div class="py-3">
+                <div class="flex justify-between font-bold mb-2 ">
+                    Total:
+                    <span class="font-bold">{{ getTotal(cart.items) | currency:'USD':'symbol' }}</span>
+                </div>
+                <div class="flex justify-between">
+                    <button routerLink="cart">
+                        <mat-icon>shopping_cart</mat-icon>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </mat-menu>
+</mat-toolbar>
